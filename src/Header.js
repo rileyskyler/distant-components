@@ -8,7 +8,7 @@ export default class Header extends Component {
         <div className="box" />
         <div className="box" />
         <div className="box login-container">
-          <Login />
+          <Login loggedInAs={this.props.loggedInAs}/>
         </div>
         <div className="box" />
       </div>

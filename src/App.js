@@ -27,9 +27,9 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Header />
+        <Header loggedInAs={this.state.loggedInAs}/>
         <MainContent />
-        <Footer />
+        <Footer loggedInAs={this.state.loggedInAs}/>
       </div>
     );
   }

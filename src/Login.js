@@ -21,6 +21,7 @@ export default class Login extends Component {
       <div className="login">
         {!loggedInAs && <div>
           Log in as <input onChange={(e) => this.updateLoginName(e.target.value)} /> <button className="button">Go</button>
+          {this.props.onSetLoggedInAs}
         </div>}
         {loggedInAs && <div>
           Welcome, {loggedInAs}! {isCreditCardHolder && "(CC holder)"}
